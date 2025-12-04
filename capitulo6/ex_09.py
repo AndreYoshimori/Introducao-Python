@@ -1,6 +1,7 @@
 # Exercício 6.9: Modifique o exemplo para pesquisar dois valores.
 # Em vez de apenas p, leia outro valor v que também será procurado.
 # Na impressão, indique qual dos dois valores foi achado primeiro.
+
 L = [15, 7, 27, 39]
 
 v1 = input('Digite o valor 1 a procurar: ')
@@ -16,6 +17,7 @@ v2 = int(v2)
 p1 = None
 p2 = None
 primeiro = None
+
 i = 0
 while i < len(L):
     if L[i] == v1:
@@ -27,6 +29,7 @@ while i < len(L):
         if primeiro is None:
             primeiro = v2
     i += 1
+    
 if primeiro is None:
     print('Nenhum valor encontrado.')
 else:

@@ -1,7 +1,10 @@
 # Exercício 5: Crie uma lista com os números de 1 a 50.
 # Depois, crie uma nova lista contendo apenas os números que são primos.
+
 numeros = list(range(1, 51))
+
 primos = []
+
 for elem in numeros:
     if elem == 1:
         continue
@@ -14,4 +17,5 @@ for elem in numeros:
             div += 1
         else:
             primos.append(elem)
+      
 print(f'Números primos de 1 a 50: {primos}')

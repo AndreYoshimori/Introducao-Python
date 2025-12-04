@@ -1,8 +1,10 @@
 # Exercício 5.19: Modifique o programa para aceitar valores decimais, ou seja, também contar moedas de 0,01, 0,02, 0,05, 0,10, 0,50.
+
 a_pagar = float(input('Digite o valor a pagar.'))
 a_pagar *= 100
 cedulas = 0
 cedula_atual = 10000
+
 while True:
     if cedula_atual <= a_pagar:
         a_pagar -= cedula_atual

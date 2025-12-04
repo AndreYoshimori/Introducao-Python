@@ -1,8 +1,10 @@
 # Exercício 5.20: O que acontece se digitarmos 0,001 no programa anterior? Caso ele não funcione, altere-o de forma a corrigir o problema.
+
 a_pagar = float(input('Digite o valor a pagar: '))
 a_pagar *= 1000
 cedulas = 0
 cedula_atual = 100000
+
 while True:
     if cedula_atual <= a_pagar:
         a_pagar -= cedula_atual

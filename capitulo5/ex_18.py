@@ -1,10 +1,13 @@
 # Exercício 5.18: Modifique o programa para também trabalhar com notas de R$ 100.
+
 a_pagar = input('Digite o valor a pagar: ')
 while not a_pagar.isnumeric():
     a_pagar = input('Digite o valor a pagar: ')
 a_pagar = int(a_pagar)
+
 cedulas = 0
 cedula_atual = 100
+
 while True:
     if cedula_atual <= a_pagar:
         a_pagar -= cedula_atual

@@ -1,4 +1,5 @@
 # Exercício 9: Dados dois dicionário, retorne uma lista com todas as chaves presentes em ambos.
+
 dicionario1 = {
     'nome': 'Carlos',
     'idade': 25,

@@ -1,13 +1,17 @@
 # Exercício 5.21: Reescreva o Programa 5.1 de forma a continuar executando até que o valor digitado seja 0. Utilize repetições aninhadas.
+
 while True:
     a_pagar = input('Digite o valor a pagar: ')
     while not a_pagar.isnumeric():
         a_pagar = input('Digite o valor a pagar: ')
     a_pagar = int(a_pagar)
+
     if a_pagar == 0:
         break
+
     cedulas = 0
     cedula_atual = 50
+    
     while True:
         if cedula_atual <= a_pagar:
             a_pagar -= cedula_atual

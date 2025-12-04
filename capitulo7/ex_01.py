@@ -2,9 +2,12 @@
 # 1ª string: AABBEFAATT
 # 2ª STRING: BE
 # Resultado: BE encontrado na posição de AABBEFAATT
+
 primeira = 'AABBEFAATT'
 segunda = 'BE'
+
 indice = primeira.find(segunda)
+
 if indice >= 0:
     print(f'{segunda} encontrado no índice {indice} de {primeira}.')
 else:

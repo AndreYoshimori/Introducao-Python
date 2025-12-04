@@ -1,5 +1,7 @@
 # Exercício 5.10: Modifique o programa anterior para que aceite respostas com letras maiúsculas e minúsculas em todas as questões.
+
 pontos = 0
+
 questao = 1
 while questao <= 3:
     resposta = input(f'Resposta da questão {questao}: ')
@@ -10,4 +12,5 @@ while questao <= 3:
     if questao == 3 and (resposta == 'd' or resposta == 'D'):
         pontos += 1
     questao += 1
+    
 print(f'O aluno fez {pontos} pontos.')

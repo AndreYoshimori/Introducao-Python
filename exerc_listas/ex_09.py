@@ -1,8 +1,12 @@
 # Exercício 9: Escreva um programa que leia uma lista de números e diga se ela está ordenada de forma crescente.
 # Caso não esteja, diga a posição onde ocorre a primeira quebra da ordem.
+
 import random
+
+
 lista = [1, 4, 7, 8, 2]
 print(lista)
+
 i = 0
 while i < (len(lista) - 1):
     if lista[i] < lista[i + 1]:

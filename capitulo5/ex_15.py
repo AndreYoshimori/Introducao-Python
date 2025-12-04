@@ -2,9 +2,10 @@
 # Você deve solicitar ao usuário que digite o código do produto e a quantidade comprada.
 # Utilize a tabela de código a seguir para obter o preço de cada produto.
 # Seu programa deve exibir o total das compras depois que o usuário digitar 0. Qualquer outro código deve gerar a mensagem de erro "Código inválido".
-total = 0
-while True:
 
+total = 0
+
+while True:
     codigo = input('Digite o código do produto ou 0 para finalizar: ')
     while not codigo.isnumeric():
             codigo = input('Digite o código do produto ou 0 para finalizar: ')
@@ -12,10 +13,8 @@ while True:
 
     if codigo == 0:
         break
-
     elif codigo != 1 and codigo != 2 and codigo != 3 and codigo != 5 and codigo != 9:
-        print('Código inválido')
-        
+        print('Código inválido')        
     else:
         quantidade = input('Digite a quantidade comprada: ')
         while not quantidade.isnumeric():

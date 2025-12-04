@@ -5,6 +5,7 @@
 # Agora, calcule o quadrado de p.
 # A cada passo, faça b=p e recalcule p usando a fórmula apresentada.
 # Pare quando a diferença absoluta entre n e o quadrado de p for menor que 0,0001.
+
 n = input('Digite o número que deseja saber a raiz quadrada: ')
 while not n.isnumeric():
     n = input('Digite o número que deseja saber a raiz quadrada: ')

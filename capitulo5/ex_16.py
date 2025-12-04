@@ -1,10 +1,13 @@
 # Execute o Programa 5.16 para os seguintes valores: 501, 745, 384, 2, 7 e 1.
+
 a_pagar = input('Digite o valor a pagar: ')
 while not a_pagar.isnumeric():
     a_pagar = input('Digite o valor a pagar: ')
 a_pagar = int(a_pagar)
+
 cedulas = 0
 cedula_atual = 50
+
 while True:
     if cedula_atual <= a_pagar:
         a_pagar -= cedula_atual

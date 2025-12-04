@@ -1,5 +1,6 @@
 # Exercício 5.22: Escreva um programa que exiba uma lista de opções (menu): adição, subtração, divisão, multiplicação e sair.
 # Imprima a tabuada da operação escolhida. Repita até que a opção saída seja escolhida.
+
 while True:
     opcao = input('Digite o número da operação da tabuada ou 0 para sair: 1 - Adição / 2 - Subtração / 3 - Divisão / 4 - Multiplicação\n->')
     while opcao != '0' and opcao != '1' and opcao != '2' and opcao != '3' and opcao != '4':

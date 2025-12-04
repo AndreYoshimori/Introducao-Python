@@ -2,6 +2,7 @@
 # Utilize apenas os operadores de soma e subtração para calcular o resultado.
 # Lembre-se de que podemos entender a multiplicação de dois números como somas sucessivas de um deles.
 # Assim, 4 x 5 = 5 + 5 + 5 + 5 = 4 + 4 + 4 + 4 + 4
+
 primeiro = input('Digite o primeiro número para a multiplicação: ')
 while not primeiro.isnumeric():
     primeiro = input('Digite o primeiro número para a multiplicação: ')
@@ -13,6 +14,7 @@ while not segundo.isnumeric():
 segundo = int(segundo)
 
 mult = 0
+
 i = 0
 while i < primeiro:
     mult += segundo

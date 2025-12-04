@@ -5,11 +5,14 @@
 # Você pode adicionar elementos à pilha sempre que encontrar abre parênteses e desempilha-lá a cada fecha parênteses.
 # Ao desempilhar, verifique se o topo da pilha é um abre parênteses.
 # Se a expressão estiver correta, sua pilha estará vazia no final.
+
 parenteses = False
+
 while not parenteses:
     expressao = input('Digite a expressão de parênteses: ')
-    x = 0
     parenteses = True
+         
+    x = 0   
     while x < len(expressao):
         if expressao[x] != '(' and expressao[x] != ')':
             parenteses = False
@@ -18,6 +21,7 @@ while not parenteses:
         x += 1
         
 pilha = []
+
 x = 0
 while x < len(expressao):
     if expressao[x] == '(':

@@ -1,4 +1,6 @@
-# Exercício 6.10: Modifique o programa do Exercício 6.9 de forma a pesquisar p e v em toda a lista e informando ao usuário a posição onde p e a posição onde v foram encontrados.
+# Exercício 6.10: Modifique o programa do Exercício 6.9 de forma a pesquisar p e v em toda a lista e informando ao usuário
+# a posição onde p e a posição onde v foram encontrados.
+
 L = [15, 7, 27, 39]
 
 v1 = input('Digite o valor 1 a procurar: ')
@@ -14,6 +16,7 @@ v2 = int(v2)
 p1 = None
 p2 = None
 primeiro = None
+
 i = 0
 while i < len(L):
     if L[i] == v1:
@@ -25,6 +28,7 @@ while i < len(L):
         if primeiro is None:
             primeiro = v2
     i += 1
+    
 if primeiro is None:
     print('Nenhum valor encontrado.')
 else:

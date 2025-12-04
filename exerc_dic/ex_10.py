@@ -1,4 +1,5 @@
 # Exercício 10: Dados dois dicionário, retorne uma lista com as chaves que não são comuns aos dois.
+
 dicionario1 = {
     'nome': 'Carlos',
     'idade': 25,

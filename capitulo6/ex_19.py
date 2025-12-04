@@ -1,10 +1,12 @@
 # Exercício 6.19: Altere o Programa 6.22 de forma a solicitar ao usuário o produto e a quantidade vendida.
 # Verifique se o nome do produto digitado existe no dicionário e só então efetue a baixa em estoque.
+
 estoque = {'tomate': [1000, 2.30],
            'alface': [500, 0.45],
            'batata': [2001, 1.20],
            'feijão': [100, 1.50]}
 venda = []
+
 total = 0
 
 while True:
@@ -30,6 +32,7 @@ for operacao in venda:
     total += custo
         
 print(f'Custo total: {total:.2f}\n')
+
 print('Estoque:\n')
 for chave, dados in estoque.items():
     print(f'Descrição: {chave}')

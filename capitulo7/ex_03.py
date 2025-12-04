@@ -3,8 +3,10 @@
 # 2ª string: ABC
 # 3ª string: BT
 # A ordem dos caracteres da terceira string não é importante.
+
 primeira = 'CTA'
 segunda = 'ABC'
+
 distintas = []
 
 for i in range(len(primeira)):
@@ -16,4 +18,5 @@ for i in range(len(segunda)):
         distintas.append(segunda[i])
 
 terceira = ''.join(distintas)
+
 print(terceira)
