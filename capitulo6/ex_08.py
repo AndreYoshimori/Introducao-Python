@@ -16,3 +16,4 @@ while i < len(L):
     i += 1
 else:
     print(f'{v} não encontrado.')
+    

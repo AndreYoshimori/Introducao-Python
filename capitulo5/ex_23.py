@@ -26,3 +26,4 @@ else:
         print(f'{num} é primo.')
     else:
         print(f'{num} não é primo.')
+        

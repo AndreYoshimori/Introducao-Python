@@ -67,3 +67,4 @@ while vida > 0:
 else:
     print('\nO alienígena te derrotou.')
     print(f'Ele estava na árvore {arvore}')
+    

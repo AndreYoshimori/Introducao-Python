@@ -12,3 +12,4 @@ if indice >= 0:
     print(f'{segunda} encontrado no índice {indice} de {primeira}.')
 else:
     print('Não encontrado.')
+    

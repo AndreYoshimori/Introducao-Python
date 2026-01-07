@@ -14,3 +14,4 @@ else:
     valor_km = 0.45
     preco = dist * valor_km
     print(f'O valor da passagem é R$ {preco}.')
+    

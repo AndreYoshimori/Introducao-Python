@@ -38,3 +38,4 @@ for chave, dados in estoque.items():
     print(f'Descrição: {chave}')
     print(f'Quantidade: {dados[0]}')
     print(f'Preço: {dados[1]:.2f}\n')
+    

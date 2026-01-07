@@ -38,3 +38,4 @@ else:
         print('Ordem incorreta dos parênteses.')
     else:
         print('Ordem correta dos parênteses.')
+        

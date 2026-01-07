@@ -10,3 +10,4 @@ while i <= 10:
     res = i * mult
     print(f'{i} x {mult} = {res}')
     i += 1
+    

@@ -34,3 +34,4 @@ while True:
         
     if 'S' in operacao:
         break    
+    

@@ -34,3 +34,4 @@ while True:
         elif cedula_atual == 2:
             cedula_atual = 1
         cedulas = 0
+        

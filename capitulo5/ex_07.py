@@ -19,3 +19,4 @@ while inicio <= final:
     res = inicio * mult
     print(f'{inicio} x {mult} = {res}')
     inicio += 1
+    

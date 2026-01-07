@@ -15,3 +15,4 @@ if palavra_na_lista(palavra, lista):
     print(f'{palavra} está na lista!')
 else:
     print(f'{palavra} não está na lista.')
+    

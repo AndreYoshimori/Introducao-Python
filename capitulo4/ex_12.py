@@ -27,3 +27,4 @@ else:
     
 if preco is not None:
     print(f'Preço a pagar: R$ {preco}')
+    

@@ -39,3 +39,4 @@ for sala, vagas in enumerate(lugares_vagos):
 
 for sala, vendidos in enumerate(ingressos_vendidos):
     print(f'Sala {sala + 1} - {vendidos} ingresso(s) vendido(s).')
+    

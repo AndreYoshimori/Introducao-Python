@@ -7,3 +7,4 @@ palavras = frase.split()
 
 for i in range(len(palavras)):
     print(palavras[(len(palavras)) - 1 - i])
+    

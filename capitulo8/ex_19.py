@@ -16,3 +16,4 @@ def gerador_primos(fim):
 
 for primo in gerador_primos(100):
     print(primo)
+    

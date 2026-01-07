@@ -7,3 +7,4 @@ texto = "   Python é legal   "
 
 if (t := texto.strip()):
     print(t)
+    

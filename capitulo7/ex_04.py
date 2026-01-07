@@ -15,3 +15,4 @@ for caractere in palavra:
 
 for chave, valor in contagem_caractere.items():
     print(f'{chave}: {valor}x')
+    

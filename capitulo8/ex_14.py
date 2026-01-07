@@ -24,3 +24,4 @@ while i < 3:
             break
         else:
             print('\nVocê errou.')
+            

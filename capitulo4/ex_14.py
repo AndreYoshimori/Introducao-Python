@@ -17,3 +17,4 @@ elif a >= 10 and a < 20:
     print('a é maior que 10 e menor que 20.')
 else:
     print('a é maior que 20;')
+    

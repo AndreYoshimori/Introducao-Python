@@ -42,3 +42,4 @@ if plano == 'falapouco' or plano == 'falamuito':
         suplemento = extra * (minutos_consumidos - minutos_no_plano)
     print(f'Suplemento R$ {suplemento:.2f}.')
     print(f'Total R$ {(preco + suplemento):.2f}.')
+    

@@ -18,3 +18,4 @@ if prest > (salario * 0.3):
     print(f'A prestação mensal, que é de R$ {prest:.2f} excede 30% do seu salário, que é de R$ {(salario * 0.3):.2f}. Não pode comprar.')
 else:
     print(f'Sua prestação mensal vai ser de {prest:.2f}')
+    

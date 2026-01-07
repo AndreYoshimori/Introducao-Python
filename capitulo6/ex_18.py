@@ -22,3 +22,4 @@ while fim > 1:
 
 for elem in L:
     print(elem)
+    

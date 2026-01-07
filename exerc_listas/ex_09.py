@@ -17,3 +17,4 @@ while i < (len(lista) - 1):
         break
 else:
     print('Está em ordem crescente.')
+    

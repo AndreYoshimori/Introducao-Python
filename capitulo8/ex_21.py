@@ -30,3 +30,4 @@ def faixa(parametro1, parametro2 = None, parametro3 = None):
 
 for n in faixa(0, 40, 5):
     print(n)
+    

@@ -14,3 +14,4 @@ letra = input('Digite uma letra para ver os nomes da lista que começam com ela:
 for elem in nomes:
     if elem[0] == letra:
         print(elem)
+        

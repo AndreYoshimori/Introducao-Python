@@ -44,3 +44,4 @@ while True:
 print('Utilização das salas:')
 for sala, vagas in enumerate(lugares_vagos):
     print(f'Sala {sala + 1} - {vagas} lugar(es) vazio(s).')
+    

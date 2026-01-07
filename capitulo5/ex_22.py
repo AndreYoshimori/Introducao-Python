@@ -29,3 +29,4 @@ while True:
             print(f'{num} x {i} = {num * i}')
             i += 1
     print('')
+    

@@ -12,3 +12,4 @@ print(f'De {x} a {fim}, os números múltiplos de 3 são: ')
 while x <= fim:
     print(x)
     x += 3
+    

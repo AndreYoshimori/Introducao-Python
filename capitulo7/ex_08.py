@@ -10,3 +10,4 @@ print(f'Essa frase possui {quantidade_palavras} palavras:')
 
 for palavra in lista_palavras:
     print(palavra)
+    

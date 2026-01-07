@@ -3,13 +3,20 @@
 
 import sys
 
-inicio = sys.argv[2]
-fim = sys.argv[3]
 
-print(inicio)
+inicio = sys.argv[2]
+inicio = int(inicio)
+
+fim = sys.argv[3]
+fim = int(fim)
+
+numero_linha = 1
 
 with open(sys.argv[1], "r") as arquivo:
-    for linha in arquivo.readlines():
-        print(linha)  
+    for linha in arquivo:
+        if numero_linha >= inicio:
+            print(linha, end="")
+        if numero_linha == fim:
+            break
+        numero_linha += 1
         
-print(fim)

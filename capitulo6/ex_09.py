@@ -42,3 +42,4 @@ else:
         print(f'{v2} foi encontrado na posição {p2}.')
     else:
         print(f'{v2} não foi encontrado.')
+        

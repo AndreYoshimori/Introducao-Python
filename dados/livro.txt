@@ -1,0 +1,98 @@
+Capítulo 1 — Introdução
+
+Este é um arquivo de teste criado especificamente para validar o exercício de paginação.
+Ele contém linhas curtas, linhas longas e também linhas vazias.
+
+Agora vem uma linha muito longa, feita de propósito para ultrapassar o limite de setenta e seis caracteres e forçar o programa a quebrá-la corretamente em múltiplas linhas.
+
+Linha curta.
+
+Outra linha extremamente longa, novamente construída para garantir que o algoritmo consiga dividir corretamente o texto em blocos de tamanho máximo sem perder caracteres ou bagunçar a ordem do conteúdo apresentado ao leitor final.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Capítulo 2 — Mais Texto
+
+Aqui temos várias linhas em sequência para testar a contagem de linhas por página.
+O objetivo é forçar o programa a gerar pelo menos duas páginas completas.
+Cada linha abaixo conta como uma linha normal.
+
+Linha 1
+Linha 2
+Linha 3
+Linha 4
+Linha 5
+Linha 6
+Linha 7
+Linha 8
+Linha 9
+Linha 10
+Linha 11
+Linha 12
+Linha 13
+Linha 14
+Linha 15
+Linha 16
+Linha 17
+Linha 18
+Linha 19
+Linha 20
+Linha 21
+Linha 22
+Linha 23
+Linha 24
+Linha 25
+Linha 26
+Linha 27
+Linha 28
+Linha 29
+Linha 30
+Linha 31
+Linha 32
+Linha 33
+Linha 34
+Linha 35
+Linha 36
+Linha 37
+Linha 38
+Linha 39
+Linha 40
+Linha 41
+Linha 42
+Linha 43
+Linha 44
+Linha 45
+Linha 46
+Linha 47
+Linha 48
+Linha 49
+Linha 50
+Linha 51
+Linha 52
+Linha 53
+Linha 54
+Linha 55
+Linha 56
+Linha 57
+Linha 58
+Linha 59
+Linha 60
+Linha 61
+Linha 62
+Linha 63
+Linha 64
+Linha 65

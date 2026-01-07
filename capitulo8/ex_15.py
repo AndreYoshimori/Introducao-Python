@@ -63,3 +63,4 @@ while True:
         print('\nEnforcado')
         print(f'A palavra era {palavra}')
         break
+    

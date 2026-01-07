@@ -13,3 +13,4 @@ if valida_string(palavra, 4, 10):
     print('Palavra válida.')
 else:
     print('Palavra inválida.')
+    

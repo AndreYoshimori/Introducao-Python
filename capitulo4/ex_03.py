@@ -16,3 +16,4 @@ if num2 < num1 and num2 < num3:
     print(f'{num2} é o menor.')
 if num3 < num1 and num3 < num2:
     print(f'{num2} é o menor.')
+    

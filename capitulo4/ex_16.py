@@ -21,3 +21,4 @@ elif media < 7:
     print('Você ficou de recuperação.')
 else:
     print('Você passou de ano.')
+    

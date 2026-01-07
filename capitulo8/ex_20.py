@@ -10,3 +10,4 @@ def gera_fatorial(fim):
 
 for fatorial in gera_fatorial(5):
     print(fatorial)
+    

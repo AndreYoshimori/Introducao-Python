@@ -16,3 +16,4 @@ if velocidade > velocidade_via:
     print(f'Você foi multado em R$ {multa}.')
 else:
     print('Você não foi multado.')
+    

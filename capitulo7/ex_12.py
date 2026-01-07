@@ -41,7 +41,7 @@ venceu = False
 print('\nInstruções das teclas:\n')
 for i in range(len(matriz)):
         for j in range(len(matriz[i])):
-            print(matriz[i][j], end = " | " if j < len(matriz[i]) - 1 else "\n")
+            print(matriz[i][j], end=" | " if j < len(matriz[i]) - 1 else "\n")
         print('--+---+--' if i < len(matriz) - 1 else "")
 
 while True:
@@ -103,7 +103,7 @@ while True:
   print()
   for i in range(len(jogo_da_velha)):
         for j in range(len(jogo_da_velha[i])):
-            print(jogo_da_velha[i][j], end = " | " if j < len(jogo_da_velha[i]) - 1 else "\n")
+            print(jogo_da_velha[i][j], end=" | " if j < len(jogo_da_velha[i]) - 1 else "\n")
         print('--+---+--' if i < len(jogo_da_velha) - 1 else "")
 
   if venceu:
@@ -120,3 +120,4 @@ while True:
       marcador = 'o'
   else:
       marcador = 'x'
+      

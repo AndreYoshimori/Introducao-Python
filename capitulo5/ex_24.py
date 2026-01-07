@@ -25,3 +25,4 @@ while cont < n:
             print(num)
             cont += 1
     num += 1
+    
