@@ -1,0 +1,36 @@
+# Exercício 4.4: Escreva um programa que pergunte o salário do funcionário e calcule o valor do aumento. 
+# Para salários superiores a R$ 1250,0, calcule um aumento de 10%. Para o inferiores ou iguais, de 15%.
+
+salario = float(input('Digite seu salário: '))
+
+if salario > 1250:
+    aumento = salario * 0.10
+    print(f'Você recebeu um aumento de 10%, ou seja, R$ {aumento:.2f}.')
+if salario <= 1250:
+    aumento = salario * 0.15
+    print(f'Você recebeu um aumento de 15%, ou seja, R$ {aumento:.2f}.')
+    
+# Exercício 6.2: Faça um programa que leia duas listas e que gere uma terceira com os elementos das duas primeiras.
+
+L1 = [1, 2, 3]
+L2 = [4, 5, 6]
+L3 = []
+
+L3 = L1 + L2
+print(L3)
+
+# Exercício 8.6: Reescreva o Programa 8.2 de forma a utilizar for em vez de while.
+
+def soma(L):
+    total = 0
+
+    for i in range(len(L)):
+        total += L[i]
+
+    return total
+
+L = [1, 7, 2, 9, 15]
+
+print(soma(L))
+print(soma([7, 9, 12, 3, 100, 20, 4]))
+

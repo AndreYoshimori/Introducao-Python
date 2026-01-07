@@ -3,7 +3,7 @@
 import sys
 
 
-with open(sys.argv[1], "r") as arquivo:
+with open(sys.argv[1], "r", encoding="utf-8") as arquivo:
     for linha in arquivo:
         print(linha, end="")
         

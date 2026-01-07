@@ -1,0 +1,28 @@
+# Exercício 5.3: Faça um programa para escrever a contagem regressiva do lançamento de um foguete. O programa deve imprimir 10, 9, 8, ..., 1, 0, e Fogo! na tela.
+
+x = 10
+while x >= 0:
+    print(x)
+    x -= 1
+    
+print('Fogo!')
+
+# Exercício 6.1: Modifique o programa 6.2 para ler 7 notas em vez de 5.
+
+notas = [0, 0, 0, 0, 0, 0, 0]
+
+soma = 0
+
+x = 0
+while x < 7:
+    notas[x] = float(input(f'Nota {x}: '))
+    soma += notas[x]
+    x += 1
+
+x = 0
+while x < 7:
+    print(f'Nota {x + 1}: {notas[x]:.2f}')
+    x += 1
+
+print(f'Média: {soma/x:.2f}')
+

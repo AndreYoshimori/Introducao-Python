@@ -5,17 +5,18 @@
 import sys 
 
 
-arquivo1 = sys.argv[1]
-arquivo2 = sys.argv[2]
+arquivos = [sys.argv[1], sys.argv[2]]
 
-nome_arquivo = "soma_arquivos.txt"
+nome_arquivo = "dados/juncao_arquivos.txt"
 
 if len(sys.argv) >= 4:
     nome_arquivo = sys.argv[3]
 
-with open(arquivo1, "r") as entrada1, open(arquivo2, "r") as entrada2, open(nome_arquivo, "w") as saida:
-    for linha in entrada1:
-        saida.write(linha)
-    for linha in entrada2:
-        saida.write(linha)
+with open(nome_arquivo, "w") as saida:
+    for arquivo in arquivos:
+        with open(arquivo, "r") as entrada:
+            for linha in entrada:
+                saida.write(linha)
+            saida.write("\n")
+
         

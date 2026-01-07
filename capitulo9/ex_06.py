@@ -3,7 +3,7 @@
 
 largura = 79
 
-with open("dados/entrada.txt", "r") as entrada:
+with open("dados/entrada.txt", "r", encoding="utf-8") as entrada:
     for linha in entrada:
         linha = linha.rstrip("\n")
         if linha[0] == ";":
