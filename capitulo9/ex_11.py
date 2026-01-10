@@ -3,9 +3,8 @@
 import string
 from pathlib import Path
 
-diretorio_entrada = Path("dados")
-arquivo_entrada = "texto.txt"
-caminho_entrada = diretorio_entrada / arquivo_entrada
+
+caminho_entrada = Path("dados") / "texto.txt"
 
 contador_palavras = {}
 

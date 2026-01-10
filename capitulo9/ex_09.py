@@ -3,10 +3,11 @@
 from pathlib import Path
 
 
-arquivos = [Path("capitulo4/ex_04.py"), Path("capitulo6/ex_02.py"), Path("capitulo8/ex_06.py")]
+arquivos = ["capitulo4/ex_04.py", "capitulo6/ex_02.py", "capitulo8/ex_06.py"]
 
 for arquivo in arquivos:
-    with arquivo.open("r", encoding="utf-8") as entrada:
+    caminho_entrada = Path(arquivo)
+    with caminho_entrada.open("r", encoding="utf-8") as entrada:
         for linha in entrada:
             print(linha, end="")
         print()

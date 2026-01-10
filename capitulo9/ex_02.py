@@ -2,21 +2,21 @@
 # O programa deve imprimir apenas as linhas entre esses dois valores (incluindo as linhas de início e fim).
 
 import sys
+from pathlib import Path
 
 
-inicio = sys.argv[2]
-inicio = int(inicio)
+caminho_entrada = Path(sys.argv[1])
 
-fim = sys.argv[3]
-fim = int(fim)
+inicio = int(sys.argv[2])
+fim = int(sys.argv[3])
 
-numero_linha = 1
+n_linha = 1
 
-with open(sys.argv[1], "r") as arquivo:
-    for linha in arquivo:
-        if numero_linha >= inicio:
+with caminho_entrada.open("r", encoding="utf-8") as entrada:
+    for linha in entrada:
+        if n_linha >= inicio:
             print(linha, end="")
-        if numero_linha == fim:
+        if n_linha == fim:
             break
-        numero_linha += 1
+        n_linha += 1
         

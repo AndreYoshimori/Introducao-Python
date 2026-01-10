@@ -8,10 +8,8 @@ from pathlib import Path
 
 diretorio = Path("dados")
 arquivo_entrada = "livro.txt"
-arquivo_saida = "livro_paginado.txt"
-
 caminho_entrada = diretorio / arquivo_entrada
-caminho_saida = diretorio / arquivo_saida
+caminho_saida = diretorio / "livro_paginado.txt"
 
 largura_linha = 76
 linhas_por_pagina = 59

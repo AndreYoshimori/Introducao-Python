@@ -1,0 +1,9 @@
+Python é uma linguagem poderosa.
+
+Ela é muito usada no mercado.
+
+Aprender Python exige prática.
+
+Mas com o tempo, tudo melhora.
+
+Fim do texto.

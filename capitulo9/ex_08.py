@@ -6,10 +6,8 @@ import sys
 
 diretorio = Path("dados")
 arquivo_entrada = "livro.txt"
-arquivo_saida = "livro_paginado.txt"
-
 caminho_entrada = diretorio / arquivo_entrada
-caminho_saida = diretorio / arquivo_saida
+caminho_saida = diretorio / "livro_paginado.txt"
 
 largura_linha = int(sys.argv[1])
 linhas_por_pagina = int(sys.argv[2]) - 1

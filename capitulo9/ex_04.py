@@ -3,20 +3,20 @@
 # O nome do arquivo de saída também pode ser passado como parâmetro na linha de comando.
 
 import sys 
+from pathlib import Path
 
 
-arquivos = [sys.argv[1], sys.argv[2]]
+arquivos_entrada = [sys.argv[1], sys.argv[2]]
 
-nome_arquivo = "dados/juncao_arquivos.txt"
+caminho_saida = Path("dados") / "juncao_arquivos.txt"
 
 if len(sys.argv) >= 4:
-    nome_arquivo = sys.argv[3]
+    caminho_saida = Path(sys.argv[3])
 
-with open(nome_arquivo, "w") as saida:
-    for arquivo in arquivos:
-        with open(arquivo, "r") as entrada:
+with caminho_saida.open("w") as saida:
+    for arquivo in arquivos_entrada:
+        caminho_entrada = Path(arquivo)
+        with caminho_entrada.open("r") as entrada:
             for linha in entrada:
                 saida.write(linha)
             saida.write("\n")
-
-        

@@ -4,20 +4,35 @@
 import string
 from pathlib import Path
 
-diretorio_entrada = Path("dados")
-arquivo_entrada = "texto.txt"
-caminho_entrada = diretorio_entrada / arquivo_entrada
 
-contador_palavras = {}
+caminho_entrada = Path("dados") / "texto.txt"
+
+ocorrencias_palavras = {}
 
 with caminho_entrada.open("r", encoding="utf-8") as entrada:
+    n_linha = 1
     for linha in entrada:
-        linha = linha.translate(str.maketrans("", "", string.punctuation))
         linha = linha.lower()
-        palavras = linha.split()
-        for palavra in palavras:
-            if palavra not in contador_palavras:
-                contador_palavras[palavra] = 0
-            contador_palavras[palavra] += 1
 
-print(contador_palavras)
+        i = 0
+        while i < len(linha):
+            while i < len(linha) and (linha[i] in string.punctuation or linha[i] == " "):
+                i += 1
+
+            if i >= len(linha):
+                break
+
+            coluna_inicio = i
+            palavra = ""
+
+            while i < len(linha) and not (linha[i] in string.punctuation or linha[i] == " "):
+                palavra += linha[i]
+                i += 1
+            
+            if palavra not in ocorrencias_palavras:
+                ocorrencias_palavras[palavra] = []
+            ocorrencias_palavras[palavra].append(f'Linha {n_linha} - Coluna {coluna_inicio}')
+
+        n_linha += 1
+
+print(ocorrencias_palavras)
