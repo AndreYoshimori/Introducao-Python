@@ -1,0 +1,10 @@
+casa
+bola
+livro
+gato
+mesa
+janela
+carro
+sol
+chuva
+amigo
