@@ -1,0 +1,5 @@
+André: 10
+Roberto: 8
+Guilherme: 6
+Cláudio: 4
+Felipe: 2

@@ -1,0 +1,2 @@
+# Exercício 9.28: Modifique o programa de forma a registrar vários telefones para a mesma pessoa.
+# Permita também cadastrar o tipo de telefone> celular, fixo, residência ou trabalho.
