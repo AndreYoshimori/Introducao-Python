@@ -26,7 +26,7 @@ def pesquisa(nome):
 
 def novo():
     nome = pede_nome()
-    telefone = pede_telefone
+    telefone = pede_telefone()
     agenda.append([nome, telefone])
 
 
@@ -46,8 +46,8 @@ def altera():
         telefone = agenda[p][1]
         print("Encontrado:")
         mostra_dados(nome, telefone)
-        nome = pede_nome
-        telefone = pede_telefone
+        nome = pede_nome()
+        telefone = pede_telefone()
         agenda[p] = [nome, telefone]
     else:
         print("Nome não encontrado.")
