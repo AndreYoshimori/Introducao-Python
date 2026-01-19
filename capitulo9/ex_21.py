@@ -38,6 +38,9 @@ def apaga():
     if p is not None:
         if confirmacao("Confirma a exclusão deste contato? [S/N]"):
             del agenda[p]
+            print("Contato excluído com sucesso!")
+        else:
+            print("Exclusão cancelada.")
     else:
         print("Nome não encontrado.")
 
@@ -53,6 +56,9 @@ def altera():
         telefone = pede_telefone()
         if confirmacao("Confirma a alteração dos dados deste contato? [S/N]"):
             agenda[p] = [nome, telefone]
+            print("Alterações feitas com sucesso!")
+        else:
+            print("Alteração cancelada.")
     else:
         print("Nome não encontrado.")
 
@@ -136,3 +142,4 @@ while opcao := menu():
         le()
     elif opcao == 7:
         ordena()
+        

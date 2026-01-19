@@ -128,3 +128,4 @@ while opcao := menu():
         le()
     elif opcao == 7:
         ordena()
+        
