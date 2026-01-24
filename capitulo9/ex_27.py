@@ -16,8 +16,16 @@ def pede_telefone():
     return input("Telefone: ")
 
 
-def mostra_dados(nome, telefone):
-    print(f"Nome: {nome} Telefone: {telefone}")
+def pede_aniversario():
+    return input("Data de aniversário: ")
+
+
+def pede_email():
+    return input("email: ")
+
+
+def mostra_dados(nome, telefone, aniversario, email):
+    print(f"Nome: {nome} | Telefone: {telefone} | Aniversário: {aniversario} | email: {email}")
 
 
 def pede_nome_arquivo():
@@ -38,7 +46,9 @@ def novo():
     alterada = True
     nome = pede_nome()
     telefone = pede_telefone()
-    agenda.append([nome, telefone])
+    aniversario = pede_aniversario()
+    email = pede_email()
+    agenda.append([nome, telefone, aniversario, email])
 
 
 def apaga():
@@ -64,12 +74,16 @@ def altera():
     if p is not None:
         nome = agenda[p][0]
         telefone = agenda[p][1]
+        aniversario = agenda[p][2]
+        email = agenda[p][3]
         print("Encontrado:")
-        mostra_dados(nome, telefone)
+        mostra_dados(nome, telefone, aniversario, email)
         nome = pede_nome()
         telefone = pede_telefone()
+        aniversario = pede_aniversario()
+        email = pede_email()
         if confirmacao("Confirma a alteração dos dados deste contato? [S/N]"):
-            agenda[p] = [nome, telefone]
+            agenda[p] = [nome, telefone, aniversario, email]
             print("Alterações feitas com sucesso!")
             alterada = True
         else:
@@ -82,7 +96,7 @@ def lista():
     print("\nAgenda\n\n------")
     for p, e in enumerate(agenda):
         print(f"{p}. ", end="")
-        mostra_dados(e[0], e[1])
+        mostra_dados(e[0], e[1], e[2], e[3])
     print("------\n")
 
 
@@ -99,19 +113,18 @@ def le():
     with open(nome_arquivo, "r", encoding="utf-8") as arquivo:
         agenda = []
         for linha in arquivo.readlines():
-            nome, telefone = linha.strip().split("#")
-            agenda.append([nome, telefone])
+            nome, telefone, aniversario, email = linha.strip().split("#")
+            agenda.append([nome, telefone, aniversario, email])
         alterada = False
         
 
-        
 def grava():
     global alterada
 
     nome_arquivo = pede_nome_arquivo()
     with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
         for e in agenda:
-            arquivo.write(f"{e[0]}#{e[1]}\n")
+            arquivo.write(f"{e[0]}#{e[1]}#{e[2]}#{e[3]}\n")
     alterada = False
 
 
