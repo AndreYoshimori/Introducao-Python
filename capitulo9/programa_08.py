@@ -24,3 +24,4 @@ with open("capitulo9/filmes.html", "w", encoding="utf-8") as pagina:
 
     pagina.write("</body>\n")
     pagina.write("</html>\n")
+    

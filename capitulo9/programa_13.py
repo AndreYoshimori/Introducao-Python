@@ -14,3 +14,4 @@ for raiz, diretorios, arquivos in Path(sys.argv[1]).walk():
         print(f"  {f}")
     
     print(f"{len(diretorios)} diretório(s), {len(arquivos)} arquivo(s)")
+    

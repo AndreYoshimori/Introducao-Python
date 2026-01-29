@@ -13,3 +13,4 @@ with open("capitulo9/pagina.html", "w", encoding="utf-8") as pagina:
         pagina.write(f"<p>{linha}</p>\n")
     pagina.write("</body>\n")
     pagina.write("</html>\n")
+    

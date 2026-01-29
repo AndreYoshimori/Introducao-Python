@@ -118,3 +118,4 @@ while opcao := menu():
         grava()
     elif opcao == 6:
         le()
+        
