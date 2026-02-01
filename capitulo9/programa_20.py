@@ -1,6 +1,6 @@
 # Programa 9.20: Cria um arquivo bmp a partir do desenho
 
-ARQUIVO = "imagem_python.bmp"
+ARQUIVO = "dados/imagem_python.bmp"
 
 
 def bytes_little_endian(numero, nbytes=4, sinal=False):
