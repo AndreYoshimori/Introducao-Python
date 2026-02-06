@@ -1,7 +1,7 @@
 from collections import UserList
 
 
-class ListaUnica:
+class ListaUnica(UserList):
     def __init__(self, elem_classe, enumerable=None):
         super().__init__(enumerable)
         self.elem_classe = elem_classe
