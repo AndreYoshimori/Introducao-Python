@@ -19,3 +19,9 @@ class ListaUnica(UserList):
     def verifica_tipo(self, elem):
         if not isinstance(elem, self.elem_classe):
             raise TypeError("Tipo inválido.")
+
+    def pesquisa(self, elem):
+        for i, atual in enumerate(self.data):
+            if atual == elem:
+                return i
+        return -1

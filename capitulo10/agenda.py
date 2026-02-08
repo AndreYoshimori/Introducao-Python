@@ -69,3 +69,64 @@ class DadoAgenda:
             return None
         else:
             return self.telefones[posicao]
+        
+
+class TiposTelefone(ListaUnica):
+    def __init__(self):
+        super().__init__(TipoTelefone)
+
+
+class Agenda(ListaUnica):
+    def __init__(self):
+        super().__init__(DadoAgenda)
+        self.tipos_telefone = TiposTelefone()
+
+    def adiciona_tipo(self, tipo):
+        self.tipos_telefone.append(TipoTelefone(tipo))
+
+    def pesquisaNome(self, nome):
+        if isinstance(nome, str):
+            nome = Nome(nome)
+        for dados in self.data:
+            if dados.nome == nome:
+                return dados
+        return None
+
+    def ordena(self):
+        self.data.sort(key=lambda dado: str(dado.nome))
+
+
+class Menu:
+    def __init__(self):
+        self.opcoes = [["Sair", None]]
+
+    def adicionaopcao(self, nome, funcao):
+        self.opcoes.append([nome, funcao])
+
+    def exibe(self):
+        print("====")
+        print("Menu")
+        print("====\n")
+        
+        for i, opcao in enumerate(self.opcoes):
+            print(f"[{i}] - {opcao[0]}")
+        print()
+
+    def execute(self):
+        while True:
+            self.exibe()
+            escolha = valida_faixa_inteiro("Escolha uma opção: ",
+                                           0, len(self.opcoes)-1)
+            if escolha == 0:
+                break
+            self.opcoes[escolha][1]()
+
+
+def valida_faixa_inteiro(pergunta, inicio, fim):
+    while True:
+        try:
+            valor = int(input(pergunta))
+            if inicio <= valor <= fim:
+                return valor
+        except ValueError:
+            print(f"Valor inválido, favor digitar entre {inicio} e {fim}")
