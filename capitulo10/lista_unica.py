@@ -14,7 +14,7 @@ class ListaUnica(UserList):
     def __setitem__(self, posicao, elem):
         self.verifica_tipo(elem)
         if elem not in self.data:
-            super().__setitem_(posicao, elem)
+            super().__setitem__(posicao, elem)
     
     def verifica_tipo(self, elem):
         if not isinstance(elem, self.elem_classe):
