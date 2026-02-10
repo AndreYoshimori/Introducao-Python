@@ -2,6 +2,7 @@
 
 import sqlite3
 
+
 conexao = sqlite3.connect("capitulo11/agenda.db")
 cursor = conexao.cursor()
 
