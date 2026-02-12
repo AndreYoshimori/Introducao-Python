@@ -8,4 +8,4 @@ with sqlite3.connect("capitulo11/brasil.db") as conexao:
     print("=" * 37)
 
     for estado in conexao.execute("select * from estados order by população desc"):
-        print(f"{estado['id']:3d} {estado['nome']:<20s} {estado['população']:12d}")
+        print(f"{estado['id']:3d} {estado['nome']:<20s} {estado['população']:>12,}")
