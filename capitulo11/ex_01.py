@@ -6,19 +6,19 @@ import sqlite3
 from contextlib import closing
 
 
-dados = [("Escova de dente", "10,00"), 
-         ("Café", "20,00"), 
-         ("Arroz", "15,00")]
+dados = [("Escova de dente", 10.00), 
+         ("Café", 20.00), 
+         ("Arroz", 15.00)]
 
 with sqlite3.connect("capitulo11/precos.db") as conexao:
     with closing(conexao.cursor()) as cursor:
         cursor.execute('''
                 create table precos(
-                       nome text, 
-                       preco text)
+                    nome text, 
+                    preco real)
                 ''')
         
         cursor.executemany('''
                 insert into precos (nome, preco)
-                       values(?, ?)
+                values(?, ?)
                 ''', dados)
