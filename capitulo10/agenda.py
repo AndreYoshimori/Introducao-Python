@@ -115,18 +115,19 @@ class Menu:
     def execute(self):
         while True:
             self.exibe()
-            escolha = valida_faixa_inteiro("Escolha uma opção: ",
+            escolha = Menu.valida_faixa_inteiro("Escolha uma opção: ",
                                            0, len(self.opcoes)-1)
             if escolha == 0:
                 break
             self.opcoes[escolha][1]()
 
-
-def valida_faixa_inteiro(pergunta, inicio, fim):
-    while True:
-        try:
-            valor = int(input(pergunta))
-            if inicio <= valor <= fim:
-                return valor
-        except ValueError:
-            print(f"Valor inválido, favor digitar entre {inicio} e {fim}")
+    @staticmethod
+    def valida_faixa_inteiro(pergunta, inicio, fim):
+        while True:
+            try:
+                valor = int(input(pergunta))
+                if inicio <= valor <= fim:
+                    return valor
+            except ValueError:
+                print(f"Valor inválido, favor digitar entre {inicio} e {fim}")
+                

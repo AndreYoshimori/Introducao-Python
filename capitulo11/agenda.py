@@ -1,3 +1,9 @@
+from capitulo10.lista_unica import ListaUnica
+from capitulo10.nome import Nome
+from capitulo10.agenda import Telefone, TipoTelefone
+
+
+
 class DBListaUnica(ListaUnica):
     def __init__(self, elem_class):
         super().__init__(elem_class)
