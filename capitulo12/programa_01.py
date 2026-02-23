@@ -15,3 +15,4 @@ for caractere in entrada:
     
 for encontrado in saida:
     print("".join(encontrado))
+    

@@ -60,8 +60,18 @@ def ddd(entrada):
 
     return (1, 0, fim) if achou > 0 else (-1, -1, -1)
 
+
+def telefone(entrada):
+    return verifica_padrao(
+        entrada,
+        [partial(ddd),
+         partial(numero, qmin=4, qmax=4),
+         partial(sequencia, padrao="-"),
+         partial(numero, qmin=4, qmax=4)]
+    )
+
 for posicao in range(len(entrada)):
-    achou, inicio, fim = ddd(entrada[posicao:])
+    achou, inicio, fim = telefone(entrada[posicao:])
     if achou > 0:
         print(f"DDD encontrado nas posições: {posicao+inicio} a {posicao+fim}")
         print(entrada[posicao + inicio : posicao + fim + 1])
