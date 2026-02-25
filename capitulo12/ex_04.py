@@ -27,11 +27,11 @@ def sequencia(entrada, padrao):
 
     for caractere in entrada:
         if caractere == padrao[posicao]:
-            posicao += 1 # Caracteres iguais, testa o próximo caractere
+            posicao += 1
         else:
-            break # Saiu da sequência
+            break
 
-        if posicao == posicao_max: # Achou toda a sequência
+        if posicao == posicao_max:
             return 1, 0, posicao -1
         
     return -1, -1, -1
