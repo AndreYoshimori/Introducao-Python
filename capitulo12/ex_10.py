@@ -16,3 +16,23 @@ R$7312.10
 """
 
 # A função deve retornar o valor digitado convertido para float ou gerar uma exceção do tipo ValueError caso o valor entrado seja inválido.
+
+import re
+
+entrada = input("Digite um preço em reais: ")
+
+def valor_reais(entrada):
+    entrada = entrada.strip()
+
+    regex = r"(?:[Rr]\$)?\d{1,3}(?:\.\d{3})*(?:,\d{2})?$"
+
+    if not re.fullmatch(regex, entrada):
+        raise ValueError("Valor inválido")
+
+    entrada = entrada.replace("R$", "").replace("r$", "")
+    entrada = entrada.replace(".", "")
+    entrada = entrada.replace(",", ".")
+
+    return float(entrada)
+
+valor_reais(entrada)
